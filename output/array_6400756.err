@@ -1,0 +1,21 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius#SoftwarepolicySnellius-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+/home/spark/.local/lib/python3.11/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+Downloading config.json:   0%|          | 0.00/570 [00:00<?, ?B/s]Downloading config.json: 100%|██████████| 570/570 [00:00<00:00, 4.29MB/s]
+Downloading model.safetensors:   0%|          | 0.00/440M [00:00<?, ?B/s]Downloading model.safetensors:  14%|█▍        | 62.9M/440M [00:00<00:00, 628MB/s]Downloading model.safetensors:  29%|██▊       | 126M/440M [00:00<00:00, 618MB/s] Downloading model.safetensors:  43%|████▎     | 189M/440M [00:00<00:00, 617MB/s]Downloading model.safetensors:  57%|█████▋    | 252M/440M [00:00<00:00, 615MB/s]Downloading model.safetensors:  71%|███████▏  | 315M/440M [00:00<00:00, 616MB/s]Downloading model.safetensors:  86%|████████▌ | 377M/440M [00:00<00:00, 614MB/s]Downloading model.safetensors: 100%|█████████▉| 440M/440M [00:00<00:00, 612MB/s]Downloading model.safetensors: 100%|██████████| 440M/440M [00:00<00:00, 607MB/s]
+Downloading vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]Downloading vocab.txt: 100%|██████████| 232k/232k [00:00<00:00, 1.43MB/s]Downloading vocab.txt: 100%|██████████| 232k/232k [00:00<00:00, 1.42MB/s]
+Downloading tokenizer_config.json:   0%|          | 0.00/48.0 [00:00<?, ?B/s]Downloading tokenizer_config.json: 100%|██████████| 48.0/48.0 [00:00<00:00, 423kB/s]

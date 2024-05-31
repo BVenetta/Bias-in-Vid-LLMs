@@ -1,0 +1,14 @@
+
+JOB STATISTICS
+==============
+Job ID: 6404472
+Cluster: snellius
+User/Group: spark/spark
+State: FAILED (exit code 127)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:01:06
+CPU Efficiency: 0.32% of 05:40:30 core-walltime
+Job Wall-clock time: 00:18:55
+Memory Utilized: 21.17 MB
+Memory Efficiency: 0.02% of 120.00 GB

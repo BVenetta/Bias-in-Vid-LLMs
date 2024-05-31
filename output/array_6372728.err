@@ -1,0 +1,57 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius#SoftwarepolicySnellius-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+  error: subprocess-exited-with-error
+  
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [23 lines of output]
+      fatal: not a git repository (or any parent up to mount point /gpfs)
+      Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+      /gpfs/scratch1/nodespecific/gcn37/spark.6372728/pip-install-c7sgluhm/flash-attn_008ce025717a4105baed8b4dcc8e1266/setup.py:78: UserWarning: flash_attn was requested, but nvcc was not found.  Are you sure your environment has nvcc available?  If you're installing within a container from https://hub.docker.com/r/pytorch/pytorch, only images whose names contain 'devel' will provide nvcc.
+        warnings.warn(
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/gpfs/scratch1/nodespecific/gcn37/spark.6372728/pip-install-c7sgluhm/flash-attn_008ce025717a4105baed8b4dcc8e1266/setup.py", line 134, in <module>
+          CUDAExtension(
+        File "/sw/arch/RHEL8/EB_production/2023/software/Anaconda3/2023.07-2/lib/python3.11/site-packages/torch/utils/cpp_extension.py", line 1048, in CUDAExtension
+          library_dirs += library_paths(cuda=True)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/sw/arch/RHEL8/EB_production/2023/software/Anaconda3/2023.07-2/lib/python3.11/site-packages/torch/utils/cpp_extension.py", line 1179, in library_paths
+          if (not os.path.exists(_join_cuda_home(lib_dir)) and
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/sw/arch/RHEL8/EB_production/2023/software/Anaconda3/2023.07-2/lib/python3.11/site-packages/torch/utils/cpp_extension.py", line 2223, in _join_cuda_home
+          raise EnvironmentError('CUDA_HOME environment variable is not set. '
+      OSError: CUDA_HOME environment variable is not set. Please set it to your CUDA install root.
+      
+      
+      torch.__version__  = 2.0.1
+      
+      
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+  Running command git clone --filter=blob:none --quiet https://github.com/facebookresearch/pytorchvideo.git /gpfs/scratch1/nodespecific/gcn37/spark.6372728/pip-req-build-sh1v4tz_
+  Running command git rev-parse -q --verify 'sha^28fe037d212663c6a24f373b94cc5d478c8c1a1d'
+  Running command git fetch -q https://github.com/facebookresearch/pytorchvideo.git 28fe037d212663c6a24f373b94cc5d478c8c1a1d
+  Running command git checkout -q 28fe037d212663c6a24f373b94cc5d478c8c1a1d

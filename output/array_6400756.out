@@ -1,0 +1,16 @@
+/home/spark/.local/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cpu.so: undefined symbol: cadam32bit_grad_fp32
+[2024-05-27 15:37:33,081] [INFO] [real_accelerator.py:110:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+
+JOB STATISTICS
+==============
+Job ID: 6400756
+Cluster: snellius
+User/Group: spark/spark
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:11
+CPU Efficiency: 2.44% of 00:07:30 core-walltime
+Job Wall-clock time: 00:00:25
+Memory Utilized: 1.08 MB
+Memory Efficiency: 0.00% of 120.00 GB
